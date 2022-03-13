@@ -10,3 +10,11 @@ describe  ('Mars' , () => {
     expect(mars.MarsAge).toEqual(0);
   })
 })
+
+describe ('MarsCalc' , () => {
+  test( "should convert earth age into Mars age" , () => {
+  let mars = new Mars(30);
+  mars.MarsCalc();
+  expect(mars.MarsAge).toEqual(16);
+})
+})
