@@ -4,6 +4,7 @@ export default class Mars {
     this.age = age;
     this.year = 1.88;
     this.MarsAge = 0;
+    this.lifeClock = 0;
   }
 
 MarsCalc() {
