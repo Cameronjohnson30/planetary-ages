@@ -10,3 +10,4 @@ export default class Mercury {
     return this.MercuryAge = this.MercuryAge + years;
   }
 }
+
