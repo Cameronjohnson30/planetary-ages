@@ -9,3 +9,11 @@ describe  ('Mercury' , () => {
     expect(mercury.MercuryAge).toEqual(0);
   })
 })
+
+describe ('MercuryCalc' , () => {
+  test( "should convert earth age into mercury age" , () => {
+  let mercury = new Mercury(30);
+  mercury.MercuryCalc();
+  expect(mercury.MercuryAge).toEqual(125);
+})
+})
