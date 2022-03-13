@@ -14,3 +14,15 @@ export default class Jupiter {
     return this.JupiterAge = Math.round(planetAge);
   }
 }
+
+
+JupitarLife() {
+  let death =this.age - this.expectancy; 
+  if (death > 0)
+    return this.deathClock = death;
+  else if (death < 0)
+    return this.deathClock = death * -1;
+  else (death === 0);
+  return this.deathClock = death;
+}
+}
