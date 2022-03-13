@@ -18,3 +18,23 @@ describe ('VenusCalc' , () => {
   expect(venus.VenusAge).toEqual(48);
 })
 })
+
+
+describe ('LifeClock' , () => {
+  test("should return the inputed years past life expentancy" , () =>{
+    let venus = new Venus(30, 20)
+    venus.VenusLife();
+    expect(venus.lifeClock).toEqual(10)
+  })
+
+  test("should return the inputed life expentancy left" , () =>{
+    let venus = new Venus(30, 40)
+    venus.VenusLife();
+    expect(venus.lifeClock).toEqual(10)
+  })
+  test("should return the inputed life expentancy zero" , () =>{
+    let venus = new Venus(30, 30)
+    venus.VenusLife();
+    expect(venus.lifeClock).toEqual(0)
+  })
+})
