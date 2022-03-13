@@ -10,3 +10,11 @@ describe  ('Venus' , () => {
     expect(venus.VenusAge).toEqual(0);
   })
 })
+
+describe ('VenusCalc' , () => {
+  test( "should convert earth age into venus age" , () => {
+  let venus = new Venus(30);
+  venus.VenusCalc();
+  expect(venus.VenusAge).toEqual(48);
+})
+})
