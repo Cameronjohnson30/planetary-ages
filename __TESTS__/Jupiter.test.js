@@ -13,10 +13,11 @@ describe  ('Jupiter' , () => {
   })
 })
 
-describe ('JupitarCalc' , () => {
-  test( "should convert earth age into Jupitar age" , () => {
-  let jupitar = new Jupitar(30,);
-  jupitar.JupitarCalc();
-  expect(jupitar.JupitarAge).toEqual(3);
+describe ('JupiterCalc' , () => {
+  test( "should convert earth age into Jupiter age" , () => {
+  let jupiter = new Jupiter(30,);
+  jupiter.JupiterCalc();
+  expect(jupiter.JupiterAge).toEqual(3);
 })
 })
+
