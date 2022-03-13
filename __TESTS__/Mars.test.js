@@ -8,6 +8,7 @@ describe  ('Mars' , () => {
     expect(mars.age).toEqual(30);
     expect(mars.year).toEqual(1.88);
     expect(mars.MarsAge).toEqual(0);
+    expect(mars.lifeClock).toEqual(0);
   })
 })
 
