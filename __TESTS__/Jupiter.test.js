@@ -1,14 +1,14 @@
-import Jupitar from '../src/Jupitar';
+import Jupiter from '../src/Jupiter';
 
-describe  ('Jupitar' , () => {
+describe  ('Jupiter' , () => {
 
-  test( "should return Jupitar function" , () => {
-    let jupitar = new Jupitar(30, 30);
-    expect(jupitar.planet).toEqual("Jupitar");
-    expect(jupitar.age).toEqual(30);
-    expect(jupitar.year).toEqual(11.86);
-    expect(jupitar.JupitarAge).toEqual(0);
-    expect(jupitar.expectancy).toEqual(30);
-    expect(jupitar.deathClock).toEqual(0)
+  test( "should return Jupiter function" , () => {
+    let jupiter = new Jupiter(30, 30);
+    expect(jupiter.planet).toEqual("Jupiter");
+    expect(jupiter.age).toEqual(30);
+    expect(jupiter.year).toEqual(11.86);
+    expect(jupiter.JupiterAge).toEqual(0);
+    expect(jupiter.expectancy).toEqual(30);
+    expect(jupiter.deathClock).toEqual(0)
   })
 })
