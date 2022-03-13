@@ -13,10 +13,10 @@ export default class Jupiter {
     let planetAge = this.JupiterAge + years;
     return this.JupiterAge = Math.round(planetAge);
   }
-}
 
 
-JupitarLife() {
+
+JupiterLife() {
   let death =this.age - this.expectancy; 
   if (death > 0)
     return this.deathClock = death;
