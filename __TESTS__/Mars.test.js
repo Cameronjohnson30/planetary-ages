@@ -19,3 +19,23 @@ describe ('MarsCalc' , () => {
   expect(mars.MarsAge).toEqual(16);
 })
 })
+
+
+describe ('LifeClock' , () => {
+  test("should return the inputed years past life expentancy" , () =>{
+    let mars = new Mars(30, 20)
+    mars.MarsLife();
+    expect(mars.lifeClock).toEqual(10)
+  })
+
+  test("should return the inputed life expentancy left" , () =>{
+    let mars = new Mars(30, 40)
+    mars.MarsLife();
+    expect(mars.lifeClock).toEqual(10)
+  })
+  test("should return the inputed life expentancy zero" , () =>{
+    let mars = new Mars(30, 30)
+    mars.MarsLife();
+    expect(mars.lifeClock).toEqual(0)
+  })
+})
