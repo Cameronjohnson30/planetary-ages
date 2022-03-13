@@ -5,7 +5,7 @@ export default class Jupiter {
     this.year = 11.86;
     this.JupiterAge = 0;
     this.expectancy = expectancy;
-    this.deathClock = 0; 
+    this.lifeClock = 0; 
   }
 
   JupiterCalc() {
@@ -19,10 +19,10 @@ export default class Jupiter {
 JupiterLife() {
   let death =this.age - this.expectancy; 
   if (death > 0)
-    return this.deathClock = death;
+    return this.lifeClock = death;
   else if (death < 0)
-    return this.deathClock = death * -1;
+    return this.lifeClock = death * -1;
   else (death === 0);
-  return this.deathClock = death;
+  return this.lifeClock = death;
 }
 }
