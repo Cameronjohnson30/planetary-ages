@@ -5,4 +5,10 @@ export default class Mars {
     this.year = 1.88;
     this.MarsAge = 0;
   }
+
+MarsCalc() {
+  let years = this.age / this.year; 
+  let planetAge = this.MarsAge + years;
+  return this.MarsAge = Math.round(planetAge);
+}
 }
