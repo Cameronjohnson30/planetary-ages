@@ -5,4 +5,10 @@ export default class Venus {
     this.year = .62;
     this.VenusAge = 0;
   }
+
+  VenusCalc() {
+    let years = this.age / this.year; 
+    let planetAge = this.VenusAge + years;
+    return this.VenusAge = Math.round(planetAge);
+  }
 }
