@@ -15,10 +15,14 @@ export default class Mars {
   }
 
   MarsLife() {
-    let death = this.age - this.expectancy;
-    if (death > 0) return (this.lifeClock = death);
-    else if (death < 0) return (this.lifeClock = death * -1);
-    else death === 0;
-    return (this.lifeClock = death);
+    let death = (this.age - this.expectancy) / this.year;
+    if (death > 0) {
+      death = " lived " + Math.round(death) + " years past expectancy";
+    } else if (death < 0) { 
+      death =  Math.round(death) * -1 + " years left";
+    } else {
+      death = " less than a year";
+    }
+    return this.lifeClock = death;
   }
 }
