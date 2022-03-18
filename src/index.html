@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Document</title>
-  </head>
-  <body>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <title>Planetary-ages</title>
+</head>
+<body>
+  
+  <form id="age-form">
+    <label for="age">Enter your age:</label>
+    <input id="age" type="number" min="1" max="100"> <style>input:in-range{border: 5px solid green;} input:out-of-range {border: 5px solid red;}</style>
+    <label for="expectancy">Enter a life expectancy:</label>
+    <input id="expectancy" type="number" min="0" max="100"> <style>input:in-range{border: 5px solid green;} input:out-of-range {border: 5px solid red;}</style>
+    <button type="submit">Submit</button>
+  </form>
+  <button class="btn-success" id="refresh">Clear</button>
+    <ul id="response"></ul>
+    <ul id="response2"></ul>
+    <ul id="response3"></ul>
+    <ul id="response4"></ul>
+    <ul id="response5"></ul>
+    <ul id="response6"></ul>
+    <ul id="response7"></ul>
+    <ul id="response8"></ul>
+  <script src="index.js"></script>
+</body>
 </html>
