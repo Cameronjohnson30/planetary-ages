@@ -24,17 +24,18 @@ describe("LifeClock", () => {
   test("should return the inputed years past life expentancy", () => {
     let jupiter = new Jupiter(30, 20);
     jupiter.JupiterLife();
-    expect(jupiter.lifeClock).toEqual(10);
+    expect(jupiter.lifeClock).toEqual(" lived 1 years past expectancy");
   });
 
   test("should return the inputed life expentancy left", () => {
     let jupiter = new Jupiter(30, 40);
     jupiter.JupiterLife();
-    expect(jupiter.lifeClock).toEqual(10);
+    expect(jupiter.lifeClock).toEqual("1 years left");
   });
   test("should return the inputed life expentancy zero", () => {
     let jupiter = new Jupiter(30, 30);
     jupiter.JupiterLife();
-    expect(jupiter.lifeClock).toEqual(0);
+    expect(jupiter.lifeClock).toEqual(" less than a year");
   });
 });
+

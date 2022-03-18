@@ -24,17 +24,17 @@ describe("LifeClock", () => {
   test("should return the inputed years past life expentancy", () => {
     let mars = new Mars(30, 20);
     mars.MarsLife();
-    expect(mars.lifeClock).toEqual(10);
+    expect(mars.lifeClock).toEqual(" lived 5 years past expectancy");
   });
 
   test("should return the inputed life expentancy left", () => {
     let mars = new Mars(30, 40);
     mars.MarsLife();
-    expect(mars.lifeClock).toEqual(10);
+    expect(mars.lifeClock).toEqual("5 years left");
   });
   test("should return the inputed life expentancy zero", () => {
     let mars = new Mars(30, 30);
     mars.MarsLife();
-    expect(mars.lifeClock).toEqual(0);
+    expect(mars.lifeClock).toEqual(" less than a year");
   });
 });

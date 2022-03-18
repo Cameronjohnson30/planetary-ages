@@ -22,17 +22,17 @@ describe("LifeClock", () => {
   test("should return the inputed years past life expentancy", () => {
     let venus = new Venus(30, 20);
     venus.VenusLife();
-    expect(venus.lifeClock).toEqual(10);
+    expect(venus.lifeClock).toEqual(" lived 16 years past expectancy");
   });
 
   test("should return the inputed life expentancy left", () => {
     let venus = new Venus(30, 40);
     venus.VenusLife();
-    expect(venus.lifeClock).toEqual(10);
+    expect(venus.lifeClock).toEqual("16 years left");
   });
   test("should return the inputed life expentancy zero", () => {
     let venus = new Venus(30, 30);
     venus.VenusLife();
-    expect(venus.lifeClock).toEqual(0);
+    expect(venus.lifeClock).toEqual(" less than a year");
   });
 });
