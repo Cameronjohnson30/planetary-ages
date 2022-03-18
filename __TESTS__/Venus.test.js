@@ -30,6 +30,7 @@ describe("LifeClock", () => {
     venus.VenusLife();
     expect(venus.lifeClock).toEqual("16 years left");
   });
+  
   test("should return the inputed life expentancy zero", () => {
     let venus = new Venus(30, 30);
     venus.VenusLife();
